@@ -1,11 +1,20 @@
-//
-//  ContentView.swift
-//  WatchQuake Watch App
-//
-//  Created by ByteOverlord on 29.10.2022.
-//
 
-import SwiftUI
+struct MapsOverlay: View {
+    @ObservedObject var model: Model
+    init() {
+        model = myModel
+    }
+    var body: some View {
+        if model.mapTxt != nil
+        {
+            let stats = WQGetStats()
+            let gif = UIImage(named: String("mapselect/") + model.mapTxt + String(".gif"), in: Bundle.main, with: nil)
+            if gif != nil {
+                let scaleX = 256.0 / Double(stats.devPixelsPerDot)
+                let scaleY = 246.0 / Double(stats.devPixelsPerDot)
+                let offsetY = Double(96.0 / stats.devPixelsPerDot)
+                Image.init(uiImage: gif!).resizable().scaledToFit().frame(width: scaleX, height: scaleY).padding(Edge.Set(Edge.top), offsetY)
+            }
 import UIKit
 
 class Model : ObservableObject {
@@ -14,6 +23,86 @@ class Model : ObservableObject {
     @Published var benchmarkTxt = String("")
     @Published var img : CGImage!
     init() {
+struct MapsOverlay: View {
+    @ObservedObject var model: Model
+    init() {
+        model = myModel
+    }
+    var body: some View {
+        if model.mapTxt != nil
+        {
+            let stats = WQGetStats()
+            let gif = UIImage(named: String("mapselect/") + model.mapTxt + String(".gif"), in: Bundle.main, with: nil)
+            if gif != nil {
+                let scaleX = 256.0 / Double(stats.devPixelsPerDot)
+                let scaleY = 246.0 / Double(stats.devPixelsPerDot)
+                let offsetY = Double(96.0 / stats.devPixelsPerDot)
+                Image.init(uiImage: gif!).resizable().scaledToFit().frame(width: scaleX, height: scaleY).padding(Edge.Set(Edge.top), offsetY)
+            }
+struct MapsOverlay: View {
+    @ObservedObject var model: Model
+    init() {
+        model = myModel
+    }
+    var body: some View {
+        if model.mapTxt != nil
+        {
+            let stats = WQGetStats()
+            let gif = UIImage(named: String("mapselect/") + model.mapTxt + String(".gif"), in: Bundle.main, with: nil)
+            if gif != nil {
+                let scaleX = 256.0 / Double(stats.devPixelsPerDot)
+                let scaleY = 246.0 / Double(stats.devPixelsPerDot)
+                let offsetY = Double(96.0 / stats.devPixelsPerDot)
+                Image.init(uiImage: gif!).resizable().scaledToFit().frame(width: scaleX, height: scaleY).padding(Edge.Set(Edge.top), offsetY)
+            }
+struct MapsOverlay: View {
+    @ObservedObject var model: Model
+    init() {
+        model = myModel
+    }
+    var body: some View {
+        if model.mapTxt != nil
+        {
+            let stats = WQGetStats()
+            let gif = UIImage(named: String("mapselect/") + model.mapTxt + String(".gif"), in: Bundle.main, with: nil)
+            if gif != nil {
+                let scaleX = 256.0 / Double(stats.devPixelsPerDot)
+                let scaleY = 246.0 / Double(stats.devPixelsPerDot)
+                let offsetY = Double(96.0 / stats.devPixelsPerDot)
+                Image.init(uiImage: gif!).resizable().scaledToFit().frame(width: scaleX, height: scaleY).padding(Edge.Set(Edge.top), offsetY)
+            }
+struct MapsOverlay: View {
+    @ObservedObject var model: Model
+    init() {
+        model = myModel
+    }
+    var body: some View {
+        if model.mapTxt != nil
+        {
+            let stats = WQGetStats()
+            let gif = UIImage(named: String("mapselect/") + model.mapTxt + String(".gif"), in: Bundle.main, with: nil)
+            if gif != nil {
+                let scaleX = 256.0 / Double(stats.devPixelsPerDot)
+                let scaleY = 246.0 / Double(stats.devPixelsPerDot)
+                let offsetY = Double(96.0 / stats.devPixelsPerDot)
+                Image.init(uiImage: gif!).resizable().scaledToFit().frame(width: scaleX, height: scaleY).padding(Edge.Set(Edge.top), offsetY)
+            }
+struct MapsOverlay: View {
+    @ObservedObject var model: Model
+    init() {
+        model = myModel
+    }
+    var body: some View {
+        if model.mapTxt != nil
+        {
+            let stats = WQGetStats()
+            let gif = UIImage(named: String("mapselect/") + model.mapTxt + String(".gif"), in: Bundle.main, with: nil)
+            if gif != nil {
+                let scaleX = 256.0 / Double(stats.devPixelsPerDot)
+                let scaleY = 246.0 / Double(stats.devPixelsPerDot)
+                let offsetY = Double(96.0 / stats.devPixelsPerDot)
+                Image.init(uiImage: gif!).resizable().scaledToFit().frame(width: scaleX, height: scaleY).padding(Edge.Set(Edge.top), offsetY)
+            }
         mapTxt = nil
         img = nil
         txt = String("")
@@ -87,6 +176,102 @@ struct ContentView: View {
     {
         model = myModel
     }
+struct MapsOverlay: View {
+    @ObservedObject var model: Model
+    init() {
+        model = myModel
+    }
+    var body: some View {
+        if model.mapTxt != nil
+        {
+            let stats = WQGetStats()
+            let gif = UIImage(named: String("mapselect/") + model.mapTxt + String(".gif"), in: Bundle.main, with: nil)
+            if gif != nil {
+                let scaleX = 256.0 / Double(stats.devPixelsPerDot)
+                let scaleY = 246.0 / Double(stats.devPixelsPerDot)
+                let offsetY = Double(96.0 / stats.devPixelsPerDot)
+                Image.init(uiImage: gif!).resizable().scaledToFit().frame(width: scaleX, height: scaleY).padding(Edge.Set(Edge.top), offsetY)
+            }
+struct MapsOverlay: View {
+    @ObservedObject var model: Model
+    init() {
+        model = myModel
+    }
+    var body: some View {
+        if model.mapTxt != nil
+        {
+            let stats = WQGetStats()
+            let gif = UIImage(named: String("mapselect/") + model.mapTxt + String(".gif"), in: Bundle.main, with: nil)
+            if gif != nil {
+                let scaleX = 256.0 / Double(stats.devPixelsPerDot)
+                let scaleY = 246.0 / Double(stats.devPixelsPerDot)
+                let offsetY = Double(96.0 / stats.devPixelsPerDot)
+                Image.init(uiImage: gif!).resizable().scaledToFit().frame(width: scaleX, height: scaleY).padding(Edge.Set(Edge.top), offsetY)
+            }
+struct MapsOverlay: View {
+    @ObservedObject var model: Model
+    init() {
+        model = myModel
+    }
+    var body: some View {
+        if model.mapTxt != nil
+        {
+            let stats = WQGetStats()
+            let gif = UIImage(named: String("mapselect/") + model.mapTxt + String(".gif"), in: Bundle.main, with: nil)
+            if gif != nil {
+                let scaleX = 256.0 / Double(stats.devPixelsPerDot)
+                let scaleY = 246.0 / Double(stats.devPixelsPerDot)
+                let offsetY = Double(96.0 / stats.devPixelsPerDot)
+                Image.init(uiImage: gif!).resizable().scaledToFit().frame(width: scaleX, height: scaleY).padding(Edge.Set(Edge.top), offsetY)
+            }
+struct MapsOverlay: View {
+    @ObservedObject var model: Model
+    init() {
+        model = myModel
+    }
+    var body: some View {
+        if model.mapTxt != nil
+        {
+            let stats = WQGetStats()
+            let gif = UIImage(named: String("mapselect/") + model.mapTxt + String(".gif"), in: Bundle.main, with: nil)
+            if gif != nil {
+                let scaleX = 256.0 / Double(stats.devPixelsPerDot)
+                let scaleY = 246.0 / Double(stats.devPixelsPerDot)
+                let offsetY = Double(96.0 / stats.devPixelsPerDot)
+                Image.init(uiImage: gif!).resizable().scaledToFit().frame(width: scaleX, height: scaleY).padding(Edge.Set(Edge.top), offsetY)
+            }
+struct MapsOverlay: View {
+    @ObservedObject var model: Model
+    init() {
+        model = myModel
+    }
+    var body: some View {
+        if model.mapTxt != nil
+        {
+            let stats = WQGetStats()
+            let gif = UIImage(named: String("mapselect/") + model.mapTxt + String(".gif"), in: Bundle.main, with: nil)
+            if gif != nil {
+                let scaleX = 256.0 / Double(stats.devPixelsPerDot)
+                let scaleY = 246.0 / Double(stats.devPixelsPerDot)
+                let offsetY = Double(96.0 / stats.devPixelsPerDot)
+                Image.init(uiImage: gif!).resizable().scaledToFit().frame(width: scaleX, height: scaleY).padding(Edge.Set(Edge.top), offsetY)
+            }
+struct MapsOverlay: View {
+    @ObservedObject var model: Model
+    init() {
+        model = myModel
+    }
+    var body: some View {
+        if model.mapTxt != nil
+        {
+            let stats = WQGetStats()
+            let gif = UIImage(named: String("mapselect/") + model.mapTxt + String(".gif"), in: Bundle.main, with: nil)
+            if gif != nil {
+                let scaleX = 256.0 / Double(stats.devPixelsPerDot)
+                let scaleY = 246.0 / Double(stats.devPixelsPerDot)
+                let offsetY = Double(96.0 / stats.devPixelsPerDot)
+                Image.init(uiImage: gif!).resizable().scaledToFit().frame(width: scaleX, height: scaleY).padding(Edge.Set(Edge.top), offsetY)
+            }
     var body: some View {
         let stats = WQGetStats()
         //let scaleX = (Float(stats.width) / Float(stats.devWidth))
